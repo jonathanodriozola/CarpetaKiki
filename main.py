@@ -1,22 +1,31 @@
-import pyautogui as pg
-import webbrowser as web
-import time
+import pyodbc
 import pandas as pd
-data = pd.read_csv("datos.csv")
-data_dict = data.to_dict('list')
-celulares = data_dict['celular']
-mensajes = data_dict['mensaje']
-combo = zip(celulares,mensajes)
-first = True
-for celular,mensaje in combo:
-    time.sleep(8)
-    web.open("https://web.whatsapp.com/send?phone="+celular+"&text="+mensaje)
-    if first:
-        time.sleep(8)
-        first=False
-    width,height = pg.size()
-    pg.click(width/2,height/2)
-    time.sleep(10)
-    pg.press('enter')
-    time.sleep(6)
-    pg.hotkey('ctrl', 'w')
+import os
+from plyer import  notification
+
+direccion_servidor = 'BOLSAGESTION\CUCCHIARA'
+nombre_bd = 'testBolsa'
+nombre_usuario = 'sa'
+password = 'Bolsa411'
+
+#CREAMOS LA CONEXION A LA BASE DE DATOS
+conexion = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
+                              direccion_servidor+';DATABASE='+nombre_bd+';UID='+nombre_usuario+';PWD=' + password)
+cursor = conexion.cursor()
+print("Se ha conectado con exito")
+
+# GENERAMOS LA CONSULTA EN LA BASE DE DATOS Y LO TRAEMOS A PYTHON
+sqlConsulta = "SELECT * FROM ClientesSinCondomino WHERE Productor = '8'"
+
+df = pd.read_sql_query(sql=sqlConsulta, con=conexion, index_col=None)
+print(df)
+
+try:
+    #EXPORTAMOS LA CONSULTA AL ESCRITORIO
+    df.to_excel(os.environ["userprofile"] + "\\Desktop\\Kikiproyect\\" + "ClientesKiki" + ".xlsx" , index = False)
+
+    #NOTIFICAMOS QUE TERMINO
+    notification.notify(title = "Estado de reporte", message = f"Se ha guardado correctamente se exportaron un: \nTotal filas: {df.shape[0]}\nTotal Columnas: {df.shape[1]}", timeout = 10)
+except ValueError as error:
+    notification.notify(title="Estado de reporte",
+                        message=f"No se pudo exportar el documento \nAsegurese de tener el archivo cerrado\nERROR: {error}",timeout=10)

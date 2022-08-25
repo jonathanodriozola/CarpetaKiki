@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dogwood-vision-355513",
+  "private_key_id": "ae113dc88e1de2a0666a70edf1eb1132d21bf49c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCPT0dNXC7ZwbuK\nTyJz5X8Z1j+nIAKdr8he2BXFwk/bP4zI+YsSxlBvMf4+fmJigaftWv+YxvvKnGc/\nIFKcRK3sNOcSxu31THrGh9rZSm7L6FQKNdH8XEEbgLs+vn8HK26yNQfr9Sj+8R5M\na9LhpcNgs2EE06rUIV/D1vSOvfCjFZ4yxM2elxVKdbOWIDB1QhJ11s6cbtPYgOp0\nnhORd8ioZPYombP/aqzs/V2T1y7wSJmFj2RhNGMdg+LAdeXtcQV5dtcpyCGmOyQl\nF2CwrsRz4TdS9ZB7rMldkY/EnGH6O2wViRM7ya+TeTMjU+PZJ2ndvn8lG0oBFWkm\nb9dbzc8hAgMBAAECggEAALhkpVhelv7PA8xyaWgioeeqLHvxGO4Xa12UrpMxARPB\nKC/oMXetAijvyKCpdg8KJT/LR3412x8egpktyQWCDciPfHRo1iKPGbK2gXwa1asY\n1orpQrfDHWZHYr4kGOrK5AKhmdOHQuu8ZU1Pw4dXMwWMcX2z30W+5LRDZsXLHdDJ\nYsmYyJdv6dxfty1VIMXNaS/G7rEv+p9rCH6qRH2v4uK+goR4hIlUAApVq4UzYf3v\nxegTKZlN/s606fELBKQepifxzAK7HDm5yQVrgNVAuKFRAOu/n/3XRGnCTQPQR315\nNl5wc95YEADVoIM/gcxmjdxGTTR3aVKkWDE0Qyrd2wKBgQDEgmHoLGEgcmTENyXh\nVH7EoEHHic1ZDwR9bo+FfBFC+hNXy/VG+eU6spe4+7E8PlCTLnu/EmUurUKOb45g\nlsCsqmOr/b+Jujihe4qPIU+KSHOMBOirVI4aY6VHw8ScyzoIz0IfSjAEYUmTygDH\n38lg8LtRgcgyYqDxdvclURsUSwKBgQC6seKznWNJApQraY5Ldkek1391GIIeFqdQ\npE+s/9f/6qjXJ1HUW9ADhagD/Wf4QDu/0g8EDalAMSaa6ANvT5igqZVAQ5MI7lYU\n1k2ADmXnysy4U/ioQksBggKtGnEw5gOk7WjOxklK+dL+wCIufo6eSjFZhOJAKhGm\nFY9t2+vOwwKBgQCHvWCQFgfJd/tvJoD+E3W1sNV/VgsI17zMQBDXrgnmcAPog7Sc\nIIZdc3wmhYW6DXlvEY7dP4GxKnFtHlYFFl1laBWNeqxSINZ5hXMCx4nABaf7MnDd\n2HyIcgh7eBlaDW+7Ih+UqZRdki5W7hR3/HeIhQF/ndyCIWr3IKw7lLjV3QKBgHQ+\nam934egFyQg20zi9TuKeo2ffeLUPWeJmTI3lRzK7g6FjhBn7iMuInxLM5721EP7g\n5iSZ9PZZJDZznB/kqZ3vuVSoPpbi/4o93UeMr3rh1RI4hq0NifJIZy4tNqlBrqc0\ng3usDtq2LuAb9ayJdHeuroeUq+NTzmVhK0s2Ed9NAoGAVTwW7qOsemcdcUNV9h3w\nIfJUOQjczkwYCPtbtayE+Pkj9aO/q6YmmJmqPY06cfCXPtGHzqB/LV8Sab0Xr+Tr\nXlWPCUc1GhpuGMGOVXiPROutDH2K/C16cwtR2Y9s9kc7iNh1/7INnhtNIRkLnlrc\nq7Ly7P8mMszfBdSeVpkJCXE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sistemas-cucchiara@dogwood-vision-355513.iam.gserviceaccount.com",
+  "client_id": "112741295339800455873",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sistemas-cucchiara%40dogwood-vision-355513.iam.gserviceaccount.com"
+}
